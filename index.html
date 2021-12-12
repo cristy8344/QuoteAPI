@@ -28,28 +28,17 @@
 						
 						var object = JSON.parse(result, function (key, value) {
 						  if (key == "content") {
-							return value;
+							quote = String(value);
 						  } 
 							
-						})};
-
-			            
-			 			}
-						//
-						//console.log(type(words[0]));
-						//alert(words[0].content);
-						//document.getElementById("random1").innerHTML=result.content[0];
+						})
 						
-					
-						//indexing is HARD result[0].q
-						
+					}	            
+			 }
 		
-						//document.getElementById("random").innerHTML = "daily quote: " + fact[1] +"<br>";
-					
-
 				
-				request.send();
-			};
+					request.send();
+		};
 		
 	</script>
 </head>
