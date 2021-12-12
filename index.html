@@ -3,13 +3,20 @@
 <head>
 	<title>Quote API</title>
 	<meta charset="utf-8"/>
+	<style>
+	
+	
+	</style>
+		
+		
+	
 	<script>
 		
 		function getQuote() {
 
 			request = new XMLHttpRequest();
 
-		 	request.open("GET", "https://zenquotes.io/api/random/", true);
+		 	request.open("GET", "https://healthruwords.p.rapidapi.com/v1/quotes/?t=Wisdom&maxR=1&size=medium&id=731", true);
 
 			 request.onreadystatechange = function() {
 					if (request.readyState == 4 && request.status == 200) {
@@ -17,9 +24,9 @@
 						var result = request.responseText;
 						
 						alert(result);
-						document.getElementById("random1").innerHTML = result.q;
+						document.getElementById("random1").innerHTML = result;
 						
-						
+						//indexing is HARD
 						
 		
 						//document.getElementById("random").innerHTML = "daily quote: " + fact[1] +"<br>";
