@@ -29,13 +29,13 @@
 						
 						var object = JSON.parse(result, function (key, value) {
 						  if (key == "content") {
-							alert(value);
-							alert(type(value));
+							quote = value;
 						  }
 						})
 						
 						//document.getElementById("random1").innerHTM=quote;
-					}	            
+					}	
+				document.getElementById("random1").innerHTML=quote;
 			 }
 		
 				
