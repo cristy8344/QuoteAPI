@@ -22,10 +22,11 @@
 					if (request.readyState == 4 && request.status == 200) {
 
 						var result = request.responseText;
-						
+						console.log("test" + result);
 						alert(result);
 						document.getElementById("random1").innerHTML=result.content;
 						
+					
 						//indexing is HARD result[0].q
 						
 		
