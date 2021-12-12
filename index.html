@@ -22,7 +22,7 @@
 					if (request.readyState == 4 && request.status == 200) {
 
 						var result = request.responseText;
-						console.log("test" + result[0]["content"]);
+						console.log("test" + result.content);
 						alert(result);
 						document.getElementById("random1").innerHTML=result[0].content;
 						
