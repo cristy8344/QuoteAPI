@@ -28,11 +28,10 @@
 						
 						var object = JSON.parse(result, function (key, value) {
 						  if (key == "content") {
-							  alert(value);
-							return "correct <br> ";
-						  } else {
-							return "not what youre looking for <br>";
+							  
+							return value;
 						  }
+							
 						})};
 
 						alert(object);
