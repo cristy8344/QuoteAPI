@@ -15,11 +15,11 @@
 					if (request.readyState == 4 && request.status == 200) {
 
 						var result = request.responseText;
-						document.getElementById("random1").innerHTML = result[1];
+						document.getElementById("random1").innerHTML = result;
 						//alert(result);
-						//fact = JSON.parse(result);
+						fact = JSON.parse(result);
 		
-						//document.getElementById("random").innerHTML = "daily quote: " + fact[1] +"<br>";
+						document.getElementById("random").innerHTML = "daily quote: " + fact[1] +"<br>";
 					}
 
 				}
