@@ -19,7 +19,7 @@
 						//alert(result);
 						fact = JSON.parse(result);
 		
-						document.getElementById("random").innerHTML = "daily quote: " + fact[1].textContent + " <br>";
+						document.getElementById("random").innerHTML = "daily quote: " + fact[1]["q"] + " <br>";
 					}
 
 				}
