@@ -23,7 +23,7 @@
 					if (request.readyState == 4 && request.status == 200) {
 
 						var result = request.responseText;
-						var words = JSON.parse(result).data;
+						var words = JSON.parse(result);
 						console.log(words[0]);
 						console.log(type(words[0]));
 						alert(words[0].content);
