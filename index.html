@@ -12,7 +12,8 @@
 		
 	
 	<script>
-		
+		var quote;
+	
 		function getQuote() {
 
 			request = new XMLHttpRequest();
@@ -28,7 +29,7 @@
 						
 						var object = JSON.parse(result, function (key, value) {
 						  if (key == "content") {
-							var quote = String(value);
+							quote = String(value);
 						  }
 						})
 						
