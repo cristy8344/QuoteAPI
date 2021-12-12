@@ -4,6 +4,7 @@
 	<title>Quote API</title>
 	<meta charset="utf-8"/>
 	<script>
+		
 		function getQuote() {
 
 			request = new XMLHttpRequest();
@@ -17,8 +18,8 @@
 						document.getElementById("q").innerHTML = result;
 						//alert(result);
 						fact = JSON.parse(result);
-					
-						document.getElementById("random").innerHTML = "daily quote: " + fact[][] + " <br>";
+		
+						document.getElementById("random").innerHTML = "daily quote: " + fact + " <br>";
 					}
 
 				}
