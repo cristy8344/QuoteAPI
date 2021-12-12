@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<title>dogFacts API</title>
+	<meta charset="utf-8"/>
+	<script>
+		function getQuote() {
+
+			request = new XMLHttpRequest();
+
+		 	request.open("GET", "https://zenquotes.io/api/random/", true);
+
+			 request.onreadystatechange = function() {
+					if (request.readyState == 4 && request.status == 200) {
+
+						var result = request.responseText;
+						document.getElementById("q").innerHTML = result;
+						//alert(result);
+						fact = JSON.parse(result);
+					
+						document.getElementById("random").innerHTML = "daily quote: " + fact[][] + " <br>";
+					}
+
+				}
+				request.send();
+			}
+		/*
+				var xhr = new XMLHttpRequest();
+				xhr.withCredentials = true;
+
+				xhr.addEventListener("readystatechange", function() {
+				  if(this.readyState === 4) {
+					console.log(this.responseText);
+				  }
+				});
+
+				xhr.open("GET", "https://zenquotes.io/api/random/");
+				
+				xhr.send();
+		}*/
+	</script>
+</head>
+
+
+<body onload="getQuote()">
+
+  <h1> Daily Dose of Inspiration </h1>
+	<div id="random"> &nbsp; </div>
+
+	<div>
+		
+	
+		
+	</div>
+</body>
+</html>
