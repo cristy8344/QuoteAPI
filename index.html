@@ -16,15 +16,15 @@
 
 			request = new XMLHttpRequest();
 
-		 	request.open("GET", "https://api.quotable.io/random", true);
+		 	request.open("GET", "https://api.quotable.io/random?maxLength=50", true);
 
 			 request.onreadystatechange = function() {
 					if (request.readyState == 4 && request.status == 200) {
 
 						var result = request.responseText;
 
-						alert(result);
-						document.getElementById("random1").innerHTML=result.content[0];
+						alert(result[0].content);
+						//document.getElementById("random1").innerHTML=result.content[0];
 						
 					
 						//indexing is HARD result[0].q
