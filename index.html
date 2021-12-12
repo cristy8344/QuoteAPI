@@ -16,9 +16,10 @@
 
 						var result = request.responseText;
 						
-						document.getElementById("random1").innerHTML = result[1].["q"];
-						
 						alert(result);
+						document.getElementById("random1").innerHTML = result[0].["q"];
+						
+						
 						
 		
 						//document.getElementById("random").innerHTML = "daily quote: " + fact[1] +"<br>";
