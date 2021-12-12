@@ -28,6 +28,7 @@
 						
 						var object = JSON.parse(result, function (key, value) {
 						  if (key == "content") {
+							  alert(value);
 							return value;
 						  } else {s
 							return "not what youre looking for <br>";
