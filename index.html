@@ -24,12 +24,12 @@
 
 						var result = request.responseText;
 						
-						alert(result);
+						
 						
 						var object = JSON.parse(result, function (key, value) {
 						  if (key == "content") {
 							  alert(value);
-							return value;
+							return "correct <br> ";
 						  } else {s
 							return "not what youre looking for <br>";
 						  }
