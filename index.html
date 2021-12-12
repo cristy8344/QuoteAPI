@@ -28,9 +28,9 @@
 						
 						var object = JSON.parse(result, function (key, value) {
 						  if (key == "content") {
-							quote = String(value);
+							var quote = String(value);
 						  } 
-							
+							document.getElementById("random1").innerHTML=quote;
 						})
 						
 					}	            
