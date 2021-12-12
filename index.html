@@ -26,10 +26,17 @@
 						
 						alert(result);
 						
-						var object = JSON.parse(result);
+						var object = JSON.parse(result, function (key, value) {
+						  if (key == "content") {
+							return value;
+						  } else {s
+							return "not what youre looking for <br>";
+						  }
+						})};
 
 						alert(object);
-						
+			            
+			 			}
 						//
 						//console.log(type(words[0]));
 						//alert(words[0].content);
