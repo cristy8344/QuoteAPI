@@ -15,7 +15,7 @@
 					if (request.readyState == 4 && request.status == 200) {
 
 						var result = request.responseText;
-						document.getElementById("q").innerHTML = result;
+						//document.getElementById("q").innerHTML = result;
 						//alert(result);
 						fact = JSON.parse(result);
 		
@@ -24,7 +24,7 @@
 
 				}
 				request.send();
-			}
+			};
 		/*
 				var xhr = new XMLHttpRequest();
 				xhr.withCredentials = true;
